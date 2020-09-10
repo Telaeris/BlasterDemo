@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hanmiit.app.rfid.blasterdemo.widgets.CheckableLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:atid="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    atid:checkable="@+id/radio" >
+    
+    <RadioButton android:id="@+id/radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center"
+        android:focusable="false"
+        android:clickable="false" />
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+	    
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+	        
+	        <TextView
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:text="@string/offset"
+	            android:textColor="@color/caption_color"
+	            android:textSize="12sp" />
+	        
+	        <TextView android:id="@+id/offset"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:textColor="@color/value_color"
+	            android:textSize="12sp"
+	            android:textStyle="bold" />
+	                
+	        <TextView
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:text="@string/length"
+	            android:textColor="@color/caption_color"
+	            android:textSize="12sp" />
+	                
+	        <TextView android:id="@+id/length"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:textColor="@color/value_color"
+	            android:textSize="12sp"
+	            android:textStyle="bold" />
+	        
+	    </LinearLayout>
+	    
+	    <TextView android:id="@+id/mask"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:textSize="18sp"
+	        android:textStyle="bold" />
+
+	</LinearLayout>
+    
+</com.hanmiit.app.rfid.blasterdemo.widgets.CheckableLinearLayout>

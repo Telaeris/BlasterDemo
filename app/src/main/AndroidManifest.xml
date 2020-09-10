@@ -1,0 +1,391 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hanmiit.app.rfid.blasterdemo">
+
+
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="true"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+
+        <activity
+            android:name="com.hanmiit.app.rfid.blasterdemo.MainActivity"
+            android:label="@string/app_name"
+            android:icon="@drawable/ic_launcher"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hanmiit.app.rfid.blasterdemo.view.InventoryActivity"
+            android:label="@string/inventory_name"
+            android:icon="@drawable/ic_inventory"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="InventoryActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hanmiit.app.rfid.blasterdemo.view.FilterInventoryActivity"
+            android:label="@string/filter_inventory_name"
+            android:icon="@drawable/ic_filter_inventory"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="FilterInventoryActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hanmiit.app.rfid.blasterdemo.view.StoredTagActivity"
+            android:label="@string/stored_tag_name"
+            android:icon="@drawable/ic_stored_tag"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="StoredTagActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hanmiit.app.rfid.blasterdemo.view.ReadMemoryActivity"
+            android:label="@string/read_memory_name"
+            android:icon="@drawable/ic_read_memory"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="ReadMemoryActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hanmiit.app.rfid.blasterdemo.view.WriteMemoryActivity"
+            android:label="@string/write_memory_name"
+            android:icon="@drawable/ic_write_memory"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="WriteMemoryActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hanmiit.app.rfid.blasterdemo.view.TagAccessActivity"
+            android:label="@string/lock_memory_name"
+            android:icon="@drawable/ic_tag_access"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="TagAccessActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hanmiit.app.rfid.blasterdemo.view.BarcodeDemoActivity"
+            android:label="@string/barcode_demo_name"
+            android:icon="@drawable/ic_barcode_demo"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="BarcodeDemoActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hanmiit.app.rfid.blasterdemo.view.BarcodeOptionActivity"
+            android:label="@string/barcode_option_name"
+            android:icon="@drawable/ic_option"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="BarcodeOptionActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hanmiit.app.rfid.blasterdemo.view.sub.barcode.EnableSymbolActivity"
+            android:label="@string/barcode_enable_symbol_name"
+            android:icon="@drawable/ic_option"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="EnableSymbolActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hanmiit.app.rfid.blasterdemo.view.sub.barcode.GeneralOptionActivity"
+            android:label="@string/barcode_general_option_name"
+            android:icon="@drawable/ic_option"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="GeneralOptionActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hanmiit.app.rfid.blasterdemo.view.sub.barcode.symbol.AustraliaPostSymbolActivity"
+            android:label="@string/barcode_symbol_australia_post_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="AustraliaPostSymbolActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hanmiit.app.rfid.blasterdemo.view.sub.barcode.symbol.CodabarSymbolActivity"
+            android:label="@string/barcode_symbol_codabar_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="CodabarSymbolActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hanmiit.app.rfid.blasterdemo.view.sub.barcode.symbol.Code11SymbolActivity"
+            android:label="@string/barcode_symbol_code11_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="Code11SymbolActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity><activity
+        android:name="com.hanmiit.app.rfid.blasterdemo.view.sub.barcode.symbol.Code128SymbolActivity"
+        android:label="@string/barcode_symbol_code128_name"
+        android:screenOrientation="portrait" >
+        <intent-filter>
+            <action android:name="Code128SymbolActivity" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity><activity
+        android:name="com.hanmiit.app.rfid.blasterdemo.view.sub.barcode.symbol.Code39SymbolActivity"
+        android:label="@string/barcode_symbol_code39_name"
+        android:screenOrientation="portrait" >
+        <intent-filter>
+            <action android:name="Code39SymbolActivity" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity><activity
+        android:name="com.hanmiit.app.rfid.blasterdemo.view.sub.barcode.symbol.CompositeSymbolActivity"
+        android:label="@string/barcode_symbol_composite_name"
+        android:screenOrientation="portrait" >
+        <intent-filter>
+            <action android:name="CompositeSymbolActivity" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity><activity
+        android:name="com.hanmiit.app.rfid.blasterdemo.view.sub.barcode.symbol.Gs1DatabarSymbolActivity"
+        android:label="@string/barcode_demo_name"
+        android:screenOrientation="portrait" >
+        <intent-filter>
+            <action android:name="Gs1DatabarSymbolActivity" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity><activity
+        android:name="com.hanmiit.app.rfid.blasterdemo.view.sub.barcode.symbol.I2of5SymbolActivity"
+        android:label="@string/barcode_demo_name"
+        android:screenOrientation="portrait" >
+        <intent-filter>
+            <action android:name="I2of5SymbolActivity" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity><activity
+        android:name="com.hanmiit.app.rfid.blasterdemo.view.sub.barcode.symbol.InverseSymbolActivity"
+        android:label="@string/barcode_demo_name"
+        android:screenOrientation="portrait" >
+        <intent-filter>
+            <action android:name="InverseSymbolActivity" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity><activity
+        android:name="com.hanmiit.app.rfid.blasterdemo.view.sub.barcode.symbol.LengthSymbolActivity"
+        android:label="@string/barcode_demo_name"
+        android:screenOrientation="portrait" >
+        <intent-filter>
+            <action android:name="LengthSymbolActivity" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity><activity
+        android:name="com.hanmiit.app.rfid.blasterdemo.view.sub.barcode.symbol.MicroPdf417SymbolActivity"
+        android:label="@string/barcode_demo_name"
+        android:screenOrientation="portrait" >
+        <intent-filter>
+            <action android:name="MicroPdf417SymbolActivity" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity><activity
+        android:name="com.hanmiit.app.rfid.blasterdemo.view.sub.barcode.symbol.MisSymbolActivity"
+        android:label="@string/barcode_demo_name"
+        android:screenOrientation="portrait" >
+        <intent-filter>
+            <action android:name="MisSymbolActivity" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity><activity
+        android:name="com.hanmiit.app.rfid.blasterdemo.view.sub.barcode.symbol.PostalSymbolActivity"
+        android:label="@string/barcode_symbol_us_postal_name"
+        android:screenOrientation="portrait" >
+        <intent-filter>
+            <action android:name="PostalSymbolActivity" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity><activity
+        android:name="com.hanmiit.app.rfid.blasterdemo.view.sub.barcode.symbol.UpcEanSymbolActivity"
+        android:label="@string/barcode_symbol_upc_ean_name"
+        android:screenOrientation="portrait" >
+        <intent-filter>
+            <action android:name="UpcEanSymbolActivity" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity>
+        <activity
+            android:name="com.hanmiit.app.rfid.blasterdemo.view.OptionActivity"
+            android:label="@string/option_name"
+            android:icon="@drawable/ic_option"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="OptionActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hanmiit.app.rfid.blasterdemo.view.DebugActivity"
+            android:label="@string/debug_name"
+            android:icon="@drawable/ic_debug"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="DebugActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hanmiit.app.rfid.blasterdemo.view.sub.SelectMaskActivity"
+            android:label="@string/select_mask_name"
+            android:icon="@drawable/ic_option"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="SelectMaskActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hanmiit.app.rfid.blasterdemo.view.sub.EpcMaskActivity"
+            android:label="@string/select_epc_mask_name"
+            android:icon="@drawable/ic_option"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="SelectMaskEpcActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hanmiit.app.rfid.blasterdemo.view.sub.EditStoredTagActivity"
+            android:label="@string/edit_stored_tag_name"
+            android:icon="@drawable/ic_stored_tag"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.hanmiit.app.rfid.blasterdemo.EditStoredInventoryActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hanmiit.lib.device.dialog.DeviceListActivity"
+            android:theme="@android:style/Theme.Dialog"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="DeviceListActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hanmiit.lib.device.dialog.BleDeviceListActivity"
+            android:theme="@android:style/Theme.Dialog"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="DeviceListActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.hanmiit.app.rfid.blasterdemo.view.OptionSymbolCodabarActivity"
+            android:label="@string/barcode_option_name"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name="com.hanmiit.app.rfid.blasterdemo.view.OptionSymbolCode11Activity"
+            android:label="@string/barcode_option_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.hanmiit.app.rfid.blasterdemo.view.OptionSymbolCode39Activity"
+            android:label="@string/barcode_option_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.hanmiit.app.rfid.blasterdemo.view.OptionSymbolCode93Activity"
+            android:label="@string/barcode_option_name"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name="com.hanmiit.app.rfid.blasterdemo.view.OptionSymbolD2of5Activity"
+            android:label="@string/barcode_option_name"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name="com.hanmiit.app.rfid.blasterdemo.view.OptionSymbolI2of5Activity"
+            android:label="@string/barcode_option_name"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name="com.hanmiit.app.rfid.blasterdemo.view.OptionSymbolMsiActivity"
+            android:label="@string/barcode_option_name"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name="com.hanmiit.app.rfid.blasterdemo.view.OptionSymbolUpcEanActivity"
+            android:label="@string/barcode_option_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.hanmiit.app.rfid.blasterdemo.view.OptionSymbolOptionCheck"
+            android:label="@string/barcode_option_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.hanmiit.app.rfid.blasterdemo.view.OptionSymbolCode128Activity"
+            android:label="@string/barcode_option_name"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name="com.hanmiit.app.rfid.blasterdemo.view.OptionSymbolPostalCodeActivity"
+            android:label="@string/barcode_option_name"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name="com.hanmiit.app.rfid.blasterdemo.view.OptionSymbolRssActivity"
+            android:label="@string/barcode_option_name"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name="com.hanmiit.app.rfid.blasterdemo.view.OptionGeneralConfigActivity"
+            android:label="@string/barcode_option_name"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>

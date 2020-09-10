@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical" >
+    
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingRight="5dp" >
+		    
+			<CheckBox android:id="@+id/symbol_enable"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:textSize="14sp"
+			    android:text="@string/symbol_enable"
+			    android:textColor="@color/label_caption" />
+			
+			<LinearLayout
+			    android:id="@+id/symbol_opt_List"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical"
+	            android:paddingRight="5dp" >
+			    
+			    <CheckBox android:id="@+id/symbol_opt1"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:textSize="14sp"
+			        android:text="@string/symbol_opt1"
+			        android:textColor="@color/label_caption" />
+			    
+			    <CheckBox android:id="@+id/symbol_opt2"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:textSize="14sp"
+			        android:text="@string/symbol_opt1"
+			        android:textColor="@color/label_caption" />
+			    
+			    <CheckBox android:id="@+id/symbol_opt3"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:textSize="14sp"
+			        android:text="@string/symbol_opt1"
+			        android:textColor="@color/label_caption" />
+			    
+			    <CheckBox android:id="@+id/symbol_opt4"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:textSize="14sp"
+			        android:text="@string/symbol_opt1"
+			        android:textColor="@color/label_caption" />
+			    
+			    <CheckBox android:id="@+id/symbol_opt5"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:textSize="14sp"
+			        android:text="@string/symbol_opt1"
+			        android:textColor="@color/label_caption" />
+			    
+			    <CheckBox android:id="@+id/symbol_opt6"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:textSize="14sp"
+			        android:text="@string/symbol_opt1"
+			        android:textColor="@color/label_caption" />
+			    
+			    <LinearLayout
+			        android:id="@+id/IsbtConcatenationRedundancy_lbl"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:orientation="horizontal"
+			        android:paddingRight="5dp" >
+			        
+			        <TextView
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:textSize="14sp"
+					    android:text="@string/IsbtConcatenationRedundancy"
+					    android:textColor="@color/label_caption" />
+				        
+			        <View android:layout_width="10dp" android:layout_height="wrap_content" />
+			        
+			        <Spinner
+					    android:id="@+id/IsbtConcatenationRedundancy"
+					    android:layout_width="fill_parent"
+					    android:layout_height="wrap_content" />
+			        
+			    </LinearLayout>		
+			    
+			        
+			    
+			</LinearLayout>
+			
+			
+    
+        </LinearLayout>
+        
+    </ScrollView>
+	
+    <ScrollView
+			    android:layout_width="fill_parent"
+			    android:layout_height="0dp"
+			    android:layout_weight="1" >
+			    
+			    <LinearLayout
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:orientation="vertical"
+			        android:paddingRight="5dp" >
+			        
+			        <com.hanmiit.app.rfid.blasterdemo.widgets.SymbolLength android:id="@+id/length"
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content" />
+			        
+			    </LinearLayout>
+        
+        	</ScrollView>
+    	
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+    				
+		<Button android:id="@+id/set_option"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center"
+		    android:textSize="16sp"
+		    android:text="@string/set_option"/>
+        
+    </LinearLayout>
+
+</LinearLayout>

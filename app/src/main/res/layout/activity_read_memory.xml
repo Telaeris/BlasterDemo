@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <!-- Selection Mask -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/selection_background"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/selection"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5dp" />
+
+    <!-- Result Message -->
+
+    <LinearLayout
+        android:id="@+id/background"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/message_background"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal" >
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="fill_parent"
+            android:layout_height="52dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/rssi_background"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+        
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/rssi_value"
+            android:textColor="@color/caption_color"
+            android:textSize="16sp" />
+        
+        <TextView android:id="@+id/rssi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textSize="16sp" />
+        
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/phase_value"
+            android:textColor="@color/caption_color"
+            android:textSize="16sp" />
+        
+        <TextView android:id="@+id/phase"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textSize="16sp" />
+        
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5dp" />
+
+    <!-- Read Memory Value -->
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="@string/read_memory_value"
+        android:textColor="@color/caption_color"
+        android:textSize="16sp" />
+
+    <ListView
+        android:id="@+id/read_memory"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/border"
+        android:padding="5dp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5dp" />
+
+    <!-- Read Memory Parameters -->
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="@string/read_memory_param"
+        android:textColor="@color/caption_color"
+        android:textSize="16sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5"
+        android:background="@drawable/border" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+			android:padding="10dp"
+            android:orientation="vertical" >
+
+            <!-- Bank -->
+
+            <LinearLayout
+                android:id="@+id/bank_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/bank"
+                    android:textColor="@color/caption_color"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="40sp" />
+
+                <TextView android:id="@+id/bank"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:layout_gravity="center_vertical"
+                    android:padding="5dp"
+                    android:textSize="16sp"
+                    android:background="@drawable/border" />
+                
+            </LinearLayout>
+
+            <View
+                android:id="@+id/bank_line"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/split_line_color" />
+
+            <!-- Offset -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/offset"
+                    android:textColor="@color/caption_color"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="40sp" />
+
+                <TextView android:id="@+id/offset"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:layout_gravity="center_vertical"
+                    android:padding="5dp"
+                    android:textSize="16sp"
+                    android:background="@drawable/border" />
+                
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/split_line_color" />
+
+            <!-- Length -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/length"
+                    android:textColor="@color/caption_color"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="40sp" />
+
+                <TextView android:id="@+id/length"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:layout_gravity="center_vertical"
+                    android:padding="5dp"
+                    android:textSize="16sp"
+                    android:background="@drawable/border" />
+                
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/split_line_color" />
+
+            <!-- Access Password -->
+
+            <LinearLayout
+                android:id="@+id/password_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/password"
+                    android:textColor="@color/caption_color"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="40sp" />
+
+                <TextView android:id="@+id/password"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:layout_gravity="center_vertical"
+                    android:padding="5dp"
+                    android:textSize="16sp"
+                    android:background="@drawable/border" />
+                
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/split_line_color" />
+
+            <!-- Power Gain -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/power_gain"
+                    android:textColor="@color/caption_color"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="40sp" />
+
+                <TextView android:id="@+id/power_gain"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:layout_gravity="center_vertical"
+                    android:padding="5dp"
+                    android:textSize="16sp"
+                    android:background="@drawable/border" />
+                
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/split_line_color" />
+            
+            <!-- Operation Time -->
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/operation_time"
+                    android:textColor="@color/caption_color"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="40dp" />
+                    
+				<TextView android:id="@+id/operation_time"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1.5"
+                    android:layout_gravity="center_vertical"
+                    android:padding="5dp"
+					android:textSize="16sp"
+					android:background="@drawable/border" />
+                
+            </LinearLayout>
+
+            <View android:id="@+id/rssi_split"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/split_line_color" />
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <!-- Report RSSI -->
+                <CheckBox
+                    android:id="@+id/report_rssi"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:enabled="false"
+                    android:text="@string/report_rssi"
+                    android:textColor="@color/caption_color" />
+                
+            </LinearLayout>
+                
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5dp" />
+
+    <!-- Buttons -->
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/action_read"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:text="@string/action_read_memory"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/action_erase"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:text="@string/action_block_erase"
+                tools:ignore="ButtonStyle" />
+            
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/clear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:text="@string/action_clear"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/mask"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:text="@string/action_mask"
+                android:textSize="18sp"
+                tools:ignore="ButtonStyle" />
+
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

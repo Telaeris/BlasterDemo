@@ -1,0 +1,349 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <!-- Demo Version -->
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="2"
+	        android:layout_gravity="center_vertical"
+	        android:text="@string/demo_version"
+	        android:textColor="@color/caption_color"
+	        android:textSize="15sp" />
+        
+		<View android:layout_width="5dp" android:layout_height="1dp" />
+        
+	    <TextView android:id="@+id/demo_version"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="3"
+	        android:layout_gravity="center_vertical"
+	        android:gravity="end"
+	        android:textColor="@color/value_color"
+	        android:textSize="15sp"
+	        android:textStyle="bold" />
+        
+    </LinearLayout>
+
+	<View android:layout_width="match_parent" android:layout_height="7dp" />
+    
+    <!-- Firmware Version -->
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+	    <TextView
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="2"
+	        android:layout_gravity="center_vertical"
+	        android:text="@string/firmware_version"
+	        android:textColor="@color/caption_color"
+	        android:textSize="15sp" />
+        
+        <View android:layout_width="5dp" android:layout_height="1dp"/>
+        
+	    <TextView android:id="@+id/firmware_version"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="3"
+	        android:layout_gravity="center_vertical"
+	        android:gravity="end"
+	        android:textColor="@color/value_color"
+	        android:textSize="15sp"
+	        android:textStyle="bold" />
+        
+    </LinearLayout>
+
+	<View android:layout_width="match_parent" android:layout_height="7dp" />
+    
+    <!-- Bluetooth Address -->
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+	    
+	    <TextView
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="2"
+	        android:layout_gravity="center_vertical"
+	        android:text="@string/bluetooth_address"
+	        android:textColor="@color/caption_color"
+	        android:textSize="15sp" />
+        
+        <View android:layout_width="5dp" android:layout_height="1dp"/>
+        
+	    <TextView android:id="@+id/address"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="3"
+	        android:layout_gravity="center_vertical"
+	        android:gravity="end"
+	        android:textColor="@color/value_color"
+	        android:textSize="15sp"
+	        android:textStyle="bold" />
+        
+    </LinearLayout>
+    
+    <!-- BLE Firmware Version -->
+
+    <LinearLayout
+        android:id="@+id/layout_ble_firmware_version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+	
+		<View android:layout_width="match_parent" android:layout_height="7dp" />
+        	    
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+	        	    
+		    <TextView
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="2"
+		        android:layout_gravity="center_vertical"
+		        android:text="@string/ble_firmware_version"
+		        android:textColor="@color/caption_color"
+		        android:textSize="15sp" />
+	    
+	        <View android:layout_width="5dp" android:layout_height="1dp"/>
+	        
+		    <TextView android:id="@+id/ble_firmware_version"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="3"
+		        android:layout_gravity="center_vertical"
+		        android:gravity="end"
+		        android:textColor="@color/value_color"
+		        android:textSize="15sp"
+		        android:textStyle="bold" />
+	        
+	    </LinearLayout>
+	    
+    </LinearLayout>
+    
+    <View android:layout_width="match_parent" android:layout_height="10dp" />
+    
+    <!-- Main Menu Buttons -->
+	<TableLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="1" >
+	    
+	    <TableRow
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="1" >
+	        
+	        <Button android:id="@+id/inventory"
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1"
+	            android:enabled="false"
+	            android:paddingTop="15dp"
+	            android:paddingBottom="5dp"
+	            android:layout_gravity="center_horizontal"
+	            android:background="@drawable/button_lightred"
+	            android:drawableTop="@drawable/ic_inventory"
+	            android:text="@string/inventory"
+	            android:textColor="@color/black"
+	            android:textSize="18sp" />
+	        
+	        <View android:layout_width="5dp" android:layout_height="match_parent"/>
+	        
+	        <Button android:id="@+id/filter_inventory"
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1"
+	            android:enabled="false"
+	            android:paddingTop="15dp"
+	            android:paddingBottom="5dp"
+	            android:layout_gravity="center_horizontal"
+	            android:background="@drawable/button_blue"
+	            android:drawableTop="@drawable/ic_filter_inventory"
+	            android:text="@string/filter_inventory"
+	            android:textColor="@color/black"
+	            android:textSize="18sp" />
+	        
+	        <View android:layout_width="5dp" android:layout_height="match_parent"/>
+	        	        
+	        <Button android:id="@+id/stored_tag"
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1"
+	            android:enabled="false"
+	            android:paddingTop="15dp"
+	            android:paddingBottom="5dp"
+	            android:layout_gravity="center_horizontal"
+	            android:background="@drawable/button_green"
+	            android:drawableTop="@drawable/ic_stored_tag"
+	            android:text="@string/stored_tag"
+	            android:textColor="@color/black"
+	            android:textSize="18sp" />
+	        	        	        
+	    </TableRow>
+	    
+	    <View android:layout_width="fill_parent" android:layout_height="5dp" />
+    
+	    <TableRow
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="1" >
+	        
+	        <Button android:id="@+id/read_memory"
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1"
+	            android:enabled="false"
+	            android:paddingTop="15dp"
+	            android:paddingBottom="5dp"
+	            android:layout_gravity="center_horizontal"
+	            android:background="@drawable/button_yellow"
+	            android:drawableTop="@drawable/ic_read_memory"
+	            android:text="@string/read_memory"
+	            android:textColor="@color/black"
+	            android:textSize="18sp" />
+	        
+	        <View android:layout_width="5dp" android:layout_height="match_parent"/>
+	        	        
+	        <Button android:id="@+id/write_memory"
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1"
+	            android:enabled="false"
+	            android:paddingTop="15dp"
+	            android:paddingBottom="5dp"
+	            android:layout_gravity="center_horizontal"
+	            android:background="@drawable/button_violet"
+	            android:drawableTop="@drawable/ic_write_memory"
+	            android:text="@string/write_memory"
+	            android:textColor="@color/black"
+	            android:textSize="18sp" />
+	        
+	        <View android:layout_width="5dp" android:layout_height="match_parent"/>
+	        	        
+	        <Button android:id="@+id/tag_access"
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1"
+	            android:enabled="false"
+	            android:paddingTop="15dp"
+	            android:paddingBottom="5dp"
+	            android:layout_gravity="center_horizontal"
+	            android:background="@drawable/button_orange"
+	            android:drawableTop="@drawable/ic_tag_access"
+	            android:text="@string/tag_access"
+	            android:textColor="@color/black"
+	            android:textSize="18sp" />
+	        	        	        
+	    </TableRow>
+	    
+	    <View android:layout_width="fill_parent" android:layout_height="5dp" />
+	    	    
+	    <TableRow
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="1" >
+	        	        
+	        <Button android:id="@+id/option"
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1"
+	            android:enabled="false"
+	            android:paddingTop="15dp"
+	            android:paddingBottom="5dp"
+	            android:layout_gravity="center_horizontal"
+	            android:background="@drawable/button_lightgreen"
+	            android:drawableTop="@drawable/ic_option"
+	            android:text="@string/option"
+	            android:textColor="@color/black"
+	            android:textSize="18sp" />
+	        
+	        <View android:layout_width="5dp" android:layout_height="match_parent"/>
+	        	        
+	        <Button android:id="@+id/barcode_demo"
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1"
+	            android:enabled="false"
+	            android:paddingTop="15dp"
+	            android:paddingBottom="5dp"
+	            android:layout_gravity="center_horizontal"
+	            android:background="@drawable/button_red"
+	            android:drawableTop="@drawable/ic_barcode_demo"
+	            android:text="@string/barcode_demo"
+	            android:textColor="@color/black"
+	            android:textSize="18sp" />
+	        	        
+	        <View android:layout_width="5dp" android:layout_height="match_parent"/>
+	        	        
+	        <Button android:id="@+id/barcode_option"
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1"
+	            android:enabled="false"
+	            android:paddingTop="15dp"
+	            android:paddingBottom="5dp"
+	            android:layout_gravity="center_horizontal"
+	            android:background="@drawable/button_cobalt"
+	            android:drawableTop="@drawable/ic_debug"
+	            android:text="@string/barcode_option"
+	            android:textColor="@color/black"
+	            android:textSize="18sp" />
+	        	        	        
+	    </TableRow>
+	    	    	    
+	</TableLayout>
+        
+    <View android:layout_width="fill_parent" android:layout_height="10dp" />
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="bottom" >
+	    
+        <ImageView
+            android:id="@+id/battery"
+            android:layout_width="65dp"
+            android:layout_height="24dp"
+            android:src="@drawable/battery0"
+            tools:ignore="ContentDescription" />
+        
+        <View android:layout_width="50dp" android:layout_height="24dp" />
+        
+	    <!-- Logo -->
+
+	    <ImageView
+	        android:id="@+id/app_logo"
+	        android:layout_width="fill_parent"
+	        android:layout_height="24dp"
+	        android:layout_gravity="bottom"
+	        android:src="@drawable/ic_disconnected_logo"
+	        tools:ignore="ContentDescription" />
+         
+    </LinearLayout>
+    
+</LinearLayout>

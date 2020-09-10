@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical" >
+    
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingRight="5dp" >
+		    
+			<CheckBox android:id="@+id/trioptic_code_39"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:textSize="14sp"
+			    android:text="@string/trioptic_code_39"
+			    android:textColor="@color/label_caption" />
+		    
+			<CheckBox android:id="@+id/convert_code_39_to_code_32"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:textSize="14sp"
+			    android:text="@string/convert_code_39_to_code_32"
+			    android:textColor="@color/label_caption" />
+		    
+			<CheckBox android:id="@+id/code_32_prefix"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:textSize="14sp"
+			    android:text="@string/code_32_prefix"
+			    android:textColor="@color/label_caption" />
+		    
+			<CheckBox android:id="@+id/code_39_check_digit_verification"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:textSize="14sp"
+			    android:text="@string/code_39_check_digit_verification"
+			    android:textColor="@color/label_caption" />
+		    
+			<CheckBox android:id="@+id/transmit_code_39_check_digit"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:textSize="14sp"
+			    android:text="@string/transmit_code_39_check_digit"
+			    android:textColor="@color/label_caption" />
+		    
+			<CheckBox android:id="@+id/code_39_full_ascii"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:textSize="14sp"
+			    android:text="@string/code_39_full_ascii"
+			    android:textColor="@color/label_caption" />
+			
+			<CheckBox android:id="@+id/buffer_code_39"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:textSize="14sp"
+			    android:text="@string/buffer_code_39"
+			    android:textColor="@color/label_caption" />
+			
+			<CheckBox android:id="@+id/code_39_reduced_quiet_zone"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:textSize="14sp"
+			    android:text="@string/reduced_quiet_zone"
+			    android:textColor="@color/label_caption" />
+
+			<View android:layout_width="fill_parent" android:layout_height="10dp" />
+									
+			<com.hanmiit.app.rfid.blasterdemo.widgets.SymbolLength android:id="@+id/length"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content" />
+									
+        </LinearLayout>
+        
+    </ScrollView>
+	
+	<View android:layout_width="fill_parent" android:layout_height="10dp"/>
+    	
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+    				
+		<Button android:id="@+id/set_option"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center"
+		    android:textSize="16sp"
+		    android:text="@string/set_option"/>
+        
+    </LinearLayout>
+
+</LinearLayout>

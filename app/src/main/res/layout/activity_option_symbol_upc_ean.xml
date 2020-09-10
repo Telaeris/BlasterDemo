@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical" >
+    
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingRight="5dp" >
+		    
+			<CheckBox android:id="@+id/transmit_upc_a_check_digit"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:textSize="14sp"
+			    android:text="@string/transmit_upc_a_check_digit"
+			    android:textColor="@color/label_caption" />
+			
+			<CheckBox android:id="@+id/transmit_upc_e_check_digit"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:textSize="14sp"
+			    android:text="@string/transmit_upc_e_check_digit"
+			    android:textColor="@color/label_caption" />
+			
+			<CheckBox android:id="@+id/transmit_upc_e1_check_digit"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:textSize="14sp"
+			    android:text="@string/transmit_upc_e1_check_digit"
+			    android:textColor="@color/label_caption" />
+			
+			<CheckBox android:id="@+id/convert_upc_e_to_upc_a"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:textSize="14sp"
+			    android:text="@string/convert_upc_e_to_upc_a"
+			    android:textColor="@color/label_caption" />
+				
+			<CheckBox android:id="@+id/convert_upc_e1_to_upc_a"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:textSize="14sp"
+			    android:text="@string/convert_upc_e1_to_upc_a"
+			    android:textColor="@color/label_caption" />
+				
+			<CheckBox android:id="@+id/ean_zero_extend"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:textSize="14sp"
+			    android:text="@string/ean_zero_extend"
+			    android:textColor="@color/label_caption" />
+				
+			<CheckBox android:id="@+id/convert_ean_8_to_ean_13_type"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:textSize="14sp"
+			    android:text="@string/convert_ean_8_to_ean_13_type"
+			    android:textColor="@color/label_caption" />
+				
+			<CheckBox android:id="@+id/ucc_coupon_extended_code"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:textSize="14sp"
+			    android:text="@string/ucc_coupon_extended_code"
+			    android:textColor="@color/label_caption" />
+			
+			<CheckBox android:id="@+id/bookland_ean"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:textSize="14sp"
+			    android:text="@string/symbol_bookland_ean_name"
+			    android:textColor="@color/label_caption" />
+			
+			<CheckBox android:id="@+id/issn_ean"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:textSize="14sp"
+			    android:text="@string/symbol_issnean_name"
+			    android:textColor="@color/label_caption" />
+			
+			<CheckBox android:id="@+id/upc_reducec_quiet_zone"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:textSize="14sp"
+			    android:text="@string/reduced_quiet_zone"
+			    android:textColor="@color/label_caption" />
+			
+			<View android:layout_width="fill_parent" android:layout_height="10dp" />
+			
+			<TextView
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:textSize="14sp"
+			    android:text="@string/decode_upc_ean_suppliementals"
+			    android:textColor="@color/label_caption" />
+		
+			<Spinner
+			    android:id="@+id/decode_upc_ean_supplement"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content" />
+			
+			<TextView
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:textSize="14sp"
+			    android:text="@string/decode_upc_ean_suppliementals_redundancy"
+			    android:textColor="@color/label_caption" />
+		
+			<Spinner
+			    android:id="@+id/decode_upc_ean_supplement_redundancy"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content" />
+			
+			<TextView
+			    android:id="@+id/upc_ean_security_level_txt"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:textSize="14sp"
+			    android:text="@string/upc_ean_security_level"
+			    android:textColor="@color/label_caption" />
+		
+			<Spinner
+			    android:id="@+id/upc_ean_security_level"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content" />
+			
+			<TextView
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:textSize="14sp"
+			    android:text="@string/upc_a_preamble"
+			    android:textColor="@color/label_caption" />
+		
+			<Spinner
+			    android:id="@+id/upc_a_preamble"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content" />
+			
+			<TextView
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:textSize="14sp"
+			    android:text="@string/upc_e_preamble"
+			    android:textColor="@color/label_caption" />
+		
+			<Spinner
+			    android:id="@+id/upc_e_preamble"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content" />
+				
+			<TextView
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:textSize="14sp"
+			    android:text="@string/upc_e1_preamble"
+			    android:textColor="@color/label_caption" />
+		
+			<Spinner
+			    android:id="@+id/upc_e1_preamble"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content" />
+			
+			<TextView
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:textSize="14sp"
+			    android:text="@string/bookland_isbn_format"
+			    android:textColor="@color/label_caption" />
+		
+			<Spinner
+			    android:id="@+id/bookland_isbn_format"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content" />
+			
+			<TextView
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:textSize="14sp"
+			    android:text="@string/coupon_report_format"
+			    android:textColor="@color/label_caption" />
+		
+			<Spinner
+			    android:id="@+id/coupon_report_format"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content" />
+			
+			<TextView
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:textSize="14sp"
+			    android:text="@string/upc_supplemental_aim_id_format"
+			    android:textColor="@color/label_caption" />
+		
+			<Spinner
+			    android:id="@+id/upc_supplemental_aim_id_format"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content" />
+			            
+        </LinearLayout>
+        
+    </ScrollView>
+	
+	<View android:layout_width="fill_parent" android:layout_height="10dp"/>
+    	
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+    				
+		<Button android:id="@+id/set_option"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center"
+		    android:textSize="16sp"
+		    android:text="@string/set_option"/>
+        
+    </LinearLayout>
+		
+</LinearLayout>

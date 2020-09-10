@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">RF Pisma Demo</string>
+	<string name="inventory_name">Inventory</string>
+	<string name="filter_inventory_name">Filter Inventory</string>
+	<string name="barcode_demo_name">Barcode Demo</string>
+	<string name="read_memory_name">Read Memory</string>
+	<string name="write_memory_name">Write Memory</string>
+	<string name="lock_memory_name">Lock Memory</string>
+	<string name="stored_tag_name">Stored Tag</string>
+	<string name="option_name">RFID Option</string>
+	<string name="debug_name">Debug</string>
+	<string name="select_mask_name">Selection Mask</string>
+	<string name="select_epc_mask_name">EPC Mask</string>
+	<string name="edit_stored_tag_name">Edit Stored Tag</string>
+	<string name="barcode_option_name">Barcode Option</string>
+	<string name="barcode_general_option_name">General Option</string>
+	<string name="barcode_enable_symbol_name">Enable/Disable Symbologies</string>
+	<string name="barcode_symbol_upc_ean_name">UPC/EAN</string>
+	<string name="barcode_symbol_code128_name">Code 128</string>
+	<string name="barcode_symbol_code39_name">Code 39</string>
+	<string name="barcode_symbol_code11_name">Code 11</string>
+	<string name="barcode_symbol_interleaved2of5_name">Interleaved 2 of 5</string>
+	<string name="barcode_symbol_discrete2of5_name">Discrete 2 of 5</string>
+	<string name="barcode_symbol_codabar_name">Codabar</string>
+	<string name="barcode_symbol_msi_name">MSI</string>
+	<string name="barcode_symbol_chinese2of5_name">Chinese 2 of 5</string>
+	<string name="barcode_symbol_matrix2of5_name">Matrix 2 of 5</string>
+	<string name="barcode_symbol_korean2of5_name">Korean 2 of 5</string>
+	<string name="barcode_symbol_us_postal_name">US Postal</string>
+	<string name="barcode_symbol_uk_postal_name">UK Postal</string>
+	<string name="barcode_symbol_australia_post_name">Australia Post</string>
+	<string name="barcode_symbol_gs1_databar_name">GS1 DataBar</string>
+	<string name="barcode_symbol_composite_name">Composite</string>
+	<string name="barcode_symbol_micro_pdf417_name">Micro PDF417</string>
+	<string name="barcode_symbol_data_matrix_name">Data Matrix</string>
+	<string name="barcode_symbol_qr_code_name">QR Code</string>
+	<string name="barcode_symbol_aztec_name">Aztec</string>
+				    
+    <!-- Menu String -->
+    <string name="connect_bt_device">Connect to last bluetooth device</string>
+    <string name="connect_new_bt_device">Connect to new bluetooth device</string>
+    <string name="connect_ble_device">Connect to BLE device</string>
+    <string name="disconnect">Disconnect from device</string>
+    
+    <!-- Main Activity String -->
+    <string name="demo_version">Demo Version</string>
+    <string name="firmware_version">Firmware Version</string>
+    <string name="inventory">Inventory</string>
+    <string name="filter_inventory">Filter Inventory</string>
+    <string name="barcode_demo">Barcode Demo</string>
+    <string name="read_memory">Read Memory</string>
+    <string name="write_memory">Write Memory</string>
+    <string name="tag_access">Lock Memory</string>
+    <string name="stored_tag">Stored Tag</string>
+    <string name="option">RFID Option</string>
+    <string name="barcode_option">Barcode Option</string>
+    <string name="debug">Debug</string>
+    <string name="logo">ATID Co., Ltd</string>
+    <string name="ble_firmware_version">BLE Version</string>
+    
+    <!-- Main Acitivity Dialog String -->
+    <string name="system_error">System Error</string>
+    <string name="system_alert">System Alert</string>
+    <string name="bluetooth_not_supported_message">This device does not support Bluetooth.</string>
+    
+    <!-- Inventory Activity -->
+    <string name="operation_time">Operation Time</string>
+    <string name="power_gain">Power Gain</string>
+    <string name="display_pc">Display PC</string>
+    <string name="report_rssi">Report RSSI</string>
+    <string name="report_tid">Report TID</string>
+    <string name="tid_length">TID Length</string>
+    <string name="continuous_mode">Continuous Mode</string>
+    <string name="count">Count</string>
+    <string name="restart_time">Restart Time</string>
+    <!-- Filter Inventory Activity -->
+    <string name="stored_mode">Stored Mode</string>
+	<string name="report_mode">Report Mode</string>
+    
+    <!-- Read Memory -->
+    <string name="read_memory_value">Read Memory Value</string>
+    <string name="read_memory_param">Read Memory Parameters</string>
+    <string name="bank">Bank</string>
+    <string name="offset">Offset</string>
+    <string name="length">Length</string>
+    <string name="password">Password</string>
+    <string name="reading_epc">Reading EPC&#8230;</string>
+	<string name="reading_tag_memory">Reading Tag Memory&#8230;</string>
+	<string name="stop_read_memory">Stop Read Memory&#8230;</string>
+	<string name="rssi_value">RSSI</string>
+	<string name="phase_value">Phase</string>
+	
+    <!-- Write Memory -->
+    <string name="write_memory_param">Write Memory Parameters</string>
+    <string name="write_data">Write Data</string>
+	<string name="writing_tag_memory">Writing Tag Memory&#8230;</string>
+	<string name="stop_write_memory">Stop Write Memory&#8230;</string>
+    
+    <!-- Lock Memory -->
+    <string name="lock_memory_param">Lock Memory Parameters</string>
+    <string name="locking_tag_memory">Locking Tag memory&#8230;</string>
+    <string name="stop_lock_memory">Stop Lock memory&#8230;</string>
+    <string name="kill_password">Kill Password</string>
+    <string name="access_password">Access Password</string>
+    <string name="epc">EPC</string>
+    <string name="tid">TID</string>
+    <string name="user">User</string>
+    <string name="set_access_password">Set Access Pwd</string>
+    <string name="set_kill_password">Set Kill Pwd</string>
+    <string name="set_access_password_title">Set Access Password</string>
+    <string name="set_kill_password_title">Set Kill Password</string>
+	
+	<!-- Stored Tag Activity -->
+	<string name="input_tag_dialog">Input Tag</string>
+	<string name="add_stored_tag">Add Stored Tag</string>
+	<string name="edit_stored_tag">Edit Stored Tag</string>
+	
+	<!-- Option Activity -->
+	<string name="buzzer">Buzzer</string>
+	<string name="region">Region</string>
+	<string name="inventory_time">Inventory Time</string>
+	<string name="idle_time">Idle Time</string>
+	<string name="auto_off_time">Auto Off Time</string>
+	<string name="key_action">Key Action</string>
+	<string name="lbt_channel">LBT Channel</string>
+		
+    <string name="action_ok">OK</string>
+    <string name="action_inventory">Inventory</string>
+    <string name="action_clear">Clear</string>
+    <string name="action_mask">Mask</string>
+    <string name="action_epc_mask">EPC Mask</string>
+    <string name="action_load">Load</string>
+    <string name="action_remove">Remove</string>
+	<string name="action_read_memory">Read</string>
+	<string name="action_write_memory">Write</string>
+	<string name="action_block_write">Block Write</string>
+	<string name="action_block_erase">Erase</string>
+	<string name="action_lock_tag">Lock</string>
+	<string name="action_unlock_tag">Unlock</string>
+	<string name="action_perma_lock_tag">PermaLock</string>
+	<string name="action_kill_tag">Kill</string>
+	<string name="action_cancel">Cancel</string>
+	<string name="action_yes">Yes</string>
+	<string name='action_no'>No</string>
+	<string name="action_stop">Stop</string>
+	<string name="action_save">Save</string>
+	<string name="action_default">Default</string>
+	<string name="action_remove_all">Remove All</string>
+    <string name="action_add">Add</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_import">Import</string>
+    <string name="action_export">Export</string>
+    <string name="action_scan_start">Start Scan</string>
+    <string name="action_scan_stop">Stop Scan</string>
+    <string name="action_option">Option</string>
+    <string name="action_set_symbol_state">Set Symbologies</string>
+    <string name="action_set_config">Set Configuration</string>
+    <string name="action_on">On</string>
+    <string name="action_off">Off</string>
+    		
+	<!-- Message -->
+	<string name="connecting_reader">Connecting to device.\r\nPlease wait&#8230;</string>
+	<string name="disconnecting_reader">Disconnecting to device.\r\nPlease wait&#8230;</string>
+	<string name="load_selection_mask">Loading Selection Mask\r\nPlease wait&#8230;</string>
+	<string name="save_selection_mask">Saving Selection Mask\r\nPlease wait&#8230;</string>
+	<string name="stop_action_message">Stopping work.\r\nnPlease wait&#8230;</string>
+	<string name="stop_action_fail_message">Failed to stop work.\r\nnPlease wait&#8230;</string>
+	<string name="read_memory_intro_message">Tag memory to read or erase\r\nPlease click the button.</string>
+	<string name="read_memory_read_message">Reading tag memory.\r\nPlease wait&#8230;</string>
+	<string name="read_memory_fail_read_message">Failed to read memory&#8230;</string>
+	<string name="read_memory_block_erase_message">Erasing tag memory.\r\nPlease wait&#8230;</string>
+	<string name="read_memory_fail_block_erase_message">Failed to block erase&#8230;</string>
+	<string name="write_memory_intro_message">Tag memory to write\r\nPlease click the button.</string>
+	<string name="write_memory_write_message">Writing tag memory.\r\nPlease wait&#8230;</string>
+	<string name="write_memory_fail_write_message">Failed to write memory&#8230;</string>
+	<string name="write_memory_block_write_message">Block writing tag memory.\r\nPlase wait&#8230;</string>
+	<string name="write_memory_fail_block_write_message">Failed to block write&#8230;</string>
+	<string name="access_intro_message">Tag memory to lock or kill,\r\nPlease click the button.</string>
+	<string name="access_lock_message">Locking Tag memory.\r\nPlease wait&#8230;</string>
+	<string name="access_unlock_message">Unlocking Tag memory.\r\nPlease wait&#8230;</string>
+	<string name="access_perma_lock_message">PermaLocking Tag memory.\r\nPlease wait&#8230;</string>
+	<string name="access_kill_message">Killing Tag memory.\r\nPlease wait&#8230;</string>
+	<string name="access_set_kill_password_message">Set Kill Password.\r\nPlease wait&#8230;</string>
+	<string name="access_set_access_password_message">Set Access Password.\r\nPlease wait&#8230;</string>
+	<string name="access_fail_lock_message">Failed to lock tag&#8230;</string>
+	<string name="access_fail_unlock_message">Failed to unlock tag&#8230;</string>
+	<string name="access_fail_perma_lock_message">Failed to perma lock tag&#8230;</string>
+	<string name="access_fail_kill_message">Failed to kill tag&#8230;</string>
+	<string name="access_fail_set_kill_password_message">Failed to Set Kill Password&#8230;</string>
+	<string name="access_fail_set_access_password_message">Failed to Set Access Password&#8230;</string>
+	<string name="invalid_password">Failed to invalid password&#8230;</string>
+	<string name="remove_all_stored_tag_message">Remove All Sotred Tags\r\nPlease wait&#8230;</string>
+	<string name="load_stored_tag_message">Load Stored Tags\r\nPlease wait&#8230;</string>
+	<string name="save_stored_tag_message">Save All Stored Tags\r\nPlease wait&#8230;</string>
+	<string name="load_option">Loading Option\r\nPlease wait&#8230;</string>
+	<string name="save_option">Saving Option\r\nPlease wait&#8230;</string>
+	<string name="load_default_option">Loading Default Option\r\nPlease wait&#8230;</string>
+	<string name="load_debug_message">Loading Debug Message\r\nPlease wait&#8230;</string>
+	<string name="save_debug_message">Saving Debug Message\r\nPlease wait&#8230;</string>
+	<string name="remove_mask_message">Are you sure you want to delete the selected mask?</string>
+	<string name="remove_stored_tag_message">Are you sure you want to delete the selected tag?</string>
+	<string name="import_stored_tag_message">Importing Stored Tags\r\nPlease wait&#8230;</string>
+	<string name="export_stored_tag_message">Exporting Stored Tags\r\nPlease wait&#8230;</string>
+	<string name="failed_import_stored_tag">Failed to import stored tag list&#8230;</string>
+	<string name="failed_export_stored_tag">Failed to export stored tag list&#8230;</string>
+	<string name="complete_save_stored_tag">Complete to save storead tag list&#8230;</string>
+	<string name="complete_import_stored_tag">Complete to import stored tag list&#8230;</string>
+	<string name="complete_export_stored_tag">Complete to export stored tag list&#8230;</string>
+	<string name="access_success">Success</string>
+	<string name="barcode_mode_change">Changing Barcode Mode\r\nPlease wait&#8230;</string>
+	<string name="barcode_load_param">Loading Barcode Parameters\r\nPlease wait&#8230;</string>
+	<string name="barcode_default_all_symbols">Reset to default all symbologies.\r\nPlease wait&#8230;</string>
+	<string name="barcode_enable_all_symbols">Enable all symbologies.\r\nPlease wait&#8230;</string>
+	<string name="barcode_disable_all_symbols">Disable all symbologies.\r\nPlease wait&#8230;</string>
+	<string name="baroce_save_symbols">Save symbolgies.\r\nPlease wait&#8230;</string>
+	<string name="uhf_mode_change">Changing UHF Mode\r\nPlease wait&#8230;</string>
+	<string name="not_support_firmware">This DEMO App can have compatibility over Ver.2.2 to firmware.\r\nPlease try again after update RF Blaster fimware Ver.2.2</string>
+	<string name="failed_activate_barcode">Failed to activate barcode.</string>
+	<string name="failed_load_barcode_option">Failed to load barcode option</string>
+	<string name="failed_save_barcode_option">Failed to save barcode option</string>
+	<string name="inventory_complete">The tag inventory has been completed.</string>
+	<string name="min_auto_off_time">Auto Off Time is a minimum of 30 seconds.</string>
+			
+	<!-- Seletion Mask -->
+	<string name="mask_item_dialog">Mask Item Dialog</string>
+	<string name="select_flag">Select Flag</string>
+	<string name="inventory_session">Inventory Session</string>
+	<string name="session_flag">Session Flag</string>
+	<string name="use_selection_mask">Use Selection Mask</string>
+	<string name="word_unit">WORD</string>
+	
+	<!-- Mask Item Dialog -->
+	<string name="target">Target</string>
+	<string name="action">Action</string>
+	<string name="mask">Mask</string>
+	<string name="unit_ms">ms</string>
+	<string name="unit_sec">sec</string>
+	<string name="stored_tag_count">Stored Tag Count</string>
+	<string name="battery_interval">Battery Interval</string>
+	<string name="load_debug">Load Debug</string>
+	<string name="debug_mode_on">Debug Mode On</string>
+	<string name="debug_mode_off">Debug Mode Off</string>
+    
+    <string name="open_file_dialog">Select Stored Tags</string>
+	<string name="path">Path</string>
+    <string name="mask_type">Mask Type</string>
+    <string name="bluetooth_address">Bluetooth Address</string>
+    <string name="unit_bit">bit</string>
+    <string name="value_0">0</string>
+    <string name="matching_mode">Not Matching</string>
+
+    <string name="device_revision">Device Revision</string>
+    
+    <string name="lbt_channel_title">LBT Channel</string>
+    <string name="rescan_time">Rescan Time</string>
+    
+    <!-- Barcode Option -->
+    
+    <string name="option_symbology">Symbology</string>
+    <string name="set_enable_status">Set Enable Status</string>
+    <string name="default_all_symbologies">Default All Symbologies</string>
+    <string name="disable_all_symbologies">Disable All Symbologies</string>
+    <string name="enable_all_symbologies">Enable All Symbologies</string>
+    <string name="save_symbologies">Save Symbologies</string>
+    <string name="general_config">General Configuration</string>
+    
+    <string name="symbol_upc_ean_name">UPC/EAN Configuration</string>
+    <string name="symbol_code128_name">Code 128 Configuration</string>
+    <string name="symbol_code39_name">Code 39 Configuration</string>
+    <string name="symbol_code93_name">Code 93 Configuration</string>
+    <string name="symbol_code11_name">Code 11 Configuration</string>
+    <string name="symbol_interleaved2of5_name">Interleaved 2 of 5 Configuration</string>
+    <string name="symbol_discete2of5_name">Discete 2 of 5 Configuration</string>
+    <string name="symbol_codabar_name">Codabar Configuration</string>
+    <string name="symbol_msi_name">MSI Configuration</string>
+    
+    <string name="transmit_upc_a_check_digit">Transmit UPC-A Check Digit</string>
+    <string name="transmit_upc_e_check_digit">Transmit UPC-E Check Digit</string>
+    <string name="transmit_upc_e1_check_digit">Transmit UPC-E1 Check Digit</string>
+    <string name="convert_upc_e_to_upc_a">Convert UPC-E to UPC-A</string>
+    <string name="convert_upc_e1_to_upc_a">Convert UPC-E1 to UPC-A</string>
+    <string name="ean_zero_extend">EAN Zero Extend</string>
+    <string name="convert_ean_8_to_ean_13_type">Convert EAN-8 to EAN-13 Type</string>
+    <string name="ucc_coupon_extended_code">UCC Coupon Extended Code</string>
+    <string name="decode_upc_ean_suppliementals">Decode UPC/EAN Suppliementals</string>
+    <string name="decode_upc_ean_suppliementals_redundancy">Decode UPC/EAN Suppliementals Redundancy</string>
+    <string name="upc_ean_security_level">UPC/EAN Security Level</string>
+    <string name="upc_a_preamble">UPC-A Preamble</string>
+    <string name="upc_e_preamble">UPC-E Preamble</string>
+    <string name="upc_e1_preamble">UPC-E1 Preamble</string>
+    
+    <string name="set_option">Set Option</string>
+    
+    <string name="trioptic_code_39">Trioptic Code 39</string>
+    <string name="convert_code_39_to_code_32">Convert Code 39 to Code 32</string>
+    <string name="code_32_prefix">Code 32 Prefix</string>
+    <string name="code_39_check_digit_verification">Code 39 Check Digit Verification</string>
+    <string name="transmit_code_39_check_digit">Transmit Code 39 Check Digit</string>
+    <string name="code_39_full_ascii">Code 39 Full ASCII</string>
+    
+    <string name="set_length_type">Set Length Type</string>
+    <string name="min_length">Min Length</string>
+    <string name="max_length">Max Length</string>
+    
+    <string name="code_11_check_digit_verification">Code 11 Check Digit Verification</string>
+    <string name="transmit_code_11_check_digit">Transmit Code 11 Check Digit</string>
+    
+    <string name="transmit_i_2_of_5_ehcekc_digit">Transmit I 2 of 5 Check Digit</string>
+    <string name="convert_i_2_of_5_to_ean_13">Convert I 2 of 5 to EAN-13</string>
+    <string name="i_2_of_5_chechk_digit_verification">I 2 of 5 Chechk Digit Verification</string>
+    
+    <string name="clsi_editing">CLSI Editing</string>
+    <string name="notis_editing">NOTIS Editing</string>
+    
+    <string name="msi_check_digits">MSI Check Digits</string>
+    <string name="transmit_msi_check_digit">Transmit MSI Check Digit</string>
+    <string name="msi_check_digit_algorithm">MSI Check Digit Algorithm</string>
+    <string name="laser_on_time">Laser On Time</string>
+    <string name="aim_duration">Aim Duration</string>
+    <string name="time_out_between_same_symbol">Time-out Between Same Symbol</string>
+    <string name="beep_after_good_decode">Beep After Good Decode</string>
+    <string name="beeper_volume">Beeper Volume</string>
+    <string name="beeper_frequency_adjustment">Beeper Frequency Adjustment</string>
+    
+    <string name="narrow_angle">Narrow Angle (35°)</string>
+    <string name="medium_angle">Medium Angle (46°)</string>
+    <string name="wide_angle">Wide Angle (53°)</string>
+    
+    <string name="linear_code_type_security_level">Redundancy Level</string>
+    <string name="security_level">Security Level</string>
+    <string name="bidirectional_redundancy">Bi-directional Redundancy</string>
+    <string name="scan_angle">Scan Angle</string>
+    <string name="set_config">Set Configuration</string>
+    <string name="linear_security_level_1">Linear Security Level 1</string>
+    <string name="linear_security_level_2">Linear Security Level 2</string>
+    <string name="linear_security_level_3">Linear Security Level 3</string>
+    <string name="linear_security_level_4">Linear Security Level 4</string>
+    <string name="check_digit">Check Digit</string>
+    <string name="addenda_2_digit">2 Digit Addenda</string>
+    <string name="addenda_5_digit">5 Digit Addenda</string>
+    <string name="addenda_required">Addenda Required</string>
+    <string name="addenda_separator">Addenda Separator</string>
+    <string name="number_system">Number System</string>
+    <string name="coupon_code">UPC-A/EAN-13 with Extended Coupon Code</string>
+    <string name="expand">UPC-E0 Expand</string>
+    <string name="isbn_translate">ISBN Translate</string>
+    <string name="message_length">Message Length</string>
+    <string name="minimum">Minimum</string>
+    <string name="maximum">Maximum</string>
+    <string name="start_stop_character">Start/Stop Character</string>
+    <string name="check_charecter">Check Charecter</string>
+    <string name="ean_ucc_emulation">EAN/UCC Emulation</string>
+    <string name="concatenation">Concatenation</string>
+    <string name="code_39_append">Code 39 Append</string>
+    <string name="code_39_pharmaceutical">Code 39 Pharmaceutical (PARAF)</string>
+    <string name="isbt_concatenation">ISBT Concatenation</string>
+    <string name="aztec_runes">Aztec Runes</string>
+    <string name="code_page">Code Page</string>
+    <string name="check_digit_transmit">Check Digit Transmit</string>
+    <string name="start_stop_charecter_transmit">Start/Stop Charecter Transmit</string>
+    <string name="telepen_output">Telepen Output</string>
+    <string name="check_digits_required">Check Digits Required</string>
+    <string name="read_type">Read Type</string>
+    <string name="ocr_type">OCR Type</string>
+    <string name="ocr_template">OCR Template</string>
+    <string name="user_defined_variable_g">User-Defined Variable g</string>
+    <string name="user_defined_variable_h">User-Defined Variable h</string>
+    <string name="check_character">Check Character</string>
+    
+    <string name="symbol_enable">Symbol enable</string>
+    <string name="symbol_set_length">Symbol set length</string>
+    <string name="symbol_opt1">option1</string>
+    <string name="symbol_opt2">option2</string>
+    <string name="symbol_opt3">option3</string>
+    <string name="symbol_opt4">option4</string>
+    <string name="symbol_opt5">option5</string>
+    <string name="IsbtConcatenationRedundancy">Concatenation Redundancy</string>
+    <string name="symbol_aztec_name">Aztec Configuration</string>
+    <string name="symbol_datamatrix_name">Data Matrix Configuration</string>
+    <string name="symbol_maxicode_name">MaxiCode Configuration</string>
+    <string name="symbol_microqr_name">MicroQR Configuration</string>
+    <string name="symbol_micropdf417_name">MicroPDF417 Configuration</string>
+    <string name="symbol_pdf417_name">PDF417 Configuration</string>
+    <string name="symbol_qrcode_name">QRCode Configuration</string>
+    <string name="symbol_matrix2of5_name">Matrix 2 of 5 Configuration</string>
+    <string name="symbol_korea3of5_name">Korea 3 of 5 Configuration</string>
+    <string name="symbol_uspostnet_name">US Postnet Configuration</string>
+    <string name="symbol_usplanet_name">US Planet Configuration</string>
+    <string name="symbol_japanpostal_name">Japan Postal Configuration</string>
+    <string name="symbol_australiapost_name">Australia Post Configuration</string>
+    <string name="symbol_kixcode_name">Netherlands KIX Configuration</string>
+    <string name="symbol_intelligentmail_name">Intelligent Mail Configuration</string>
+    <string name="symbol_ficspostal_name">FICS Postal Configuration</string>
+    <string name="symbol_compostite_name">Composite Configuration</string>
+    <string name="symbol_hanxin_name">Han Xin Configuration</string>
+    <string name="symbol_ukpostal_name">UK Postal Configuration</string>
+    <string name="symbol_rss_name">RSS(GS1 DataBar) Configuration</string>
+    <string name="symbol_issnean_name">ISSN EAN</string>
+    <string name="symbol_bookland_ean_name">Bookland EAN</string>
+    <string name="symbol_ch2of5_name">Chinese 2 of 5 Configuration</string>
+    <string name="inverse_1d">Inverse 1D</string>
+    <string name="transmit_checkdigit">Transmit Check Digit</string>
+    <string name="rss_14_enable">RSS-14(GS1 DataBar)</string>
+    <string name="rss_limited_enable">RSS-Limited(GS1 DataBar Limited)</string>
+    <string name="rss_expanded_enable">RSS-Expanded(GS1 DataBar Expanded)</string>
+    <string name="rss_limited_security_level">RSS-Limited Security Level</string>
+    <string name="convert_rss_to_upcean">Convert RSS-14 to UPC/EAN</string>
+    <string name="char_set_name">CharSet is used for decoding </string>
+    <string name="postal_codes_2d">Postal Codes - 2D</string>
+    <string name="planet_check_digit_transmit">Planet Code Check Digit</string>
+    <string name="postnet_check_digit_transmit">Postnet Check Digit</string>
+    <string name="aus_post_interpretation">Australian Post Interpretation</string>
+    <string name="buffer_code_39">Buffer Code 39</string>
+    <string name="reduced_quiet_zone">Reduced Quiet Zone</string>
+    <string name="codabar_start_stop_chars_detection">Codabar Upper or Lower Case Start/Stop Characters Detection</string>
+    <string name="bookland_isbn_format">Bookland ISBN Format</string>
+    <string name="coupon_report_format">Coupon Report</string>
+    <string name="upc_supplemental_aim_id_format">UPC/EAN/JAN Supplemental AIM ID Format</string>
+    <string name="user_programmable_supplemental_1">User-Programmable Supplemental 1</string>
+    <string name="user_programmable_supplemental_2">User-Programmable Supplemental 2</string>
+    
+    <string name="faile_to_set_symbologies">Faile to set symbologies</string>
+    
+    <!-- Barcode Enable/Disable Symbologies -->
+    
+    <!-- Barcode General Options -->
+    <string name="read_timeout">Read Timeout</string>
+    <string name="reread_delay">Reread Delay</string>
+    <string name="illumination_lights">Illumination Lights</string>
+    <string name="aimer_delay">Aimer Delay</string>
+    <string name="aimer_mode">Aimer Mode</string>
+    
+    <string name="log_file_dialog">Enable File Log</string>
+    <string name="log_file_message">Do you want to enable the log file?</string>
+    
+    <string name="debug_mode_title">Please select the operating mode.</string>
+    
+</resources>

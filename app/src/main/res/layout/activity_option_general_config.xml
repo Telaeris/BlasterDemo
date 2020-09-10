@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical" >
+    
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+	
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:paddingRight="5dp" >
+		    
+			<TextView
+			    android:id="@+id/linear_code_type_security_level_txt"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:textSize="14sp"
+			    android:text="@string/linear_code_type_security_level"
+			    android:textColor="@color/label_caption" />
+			
+			<Spinner 
+			    android:id="@+id/linear_code_type_security_level"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content" />
+			
+			<TextView
+			    android:id="@+id/security_level_text"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:textSize="14sp"
+			    android:text="@string/security_level"
+			    android:textColor="@color/label_caption" />
+			
+			<Spinner 
+			    android:id="@+id/security_level"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content" />
+			
+			<!-- 
+			<CheckBox 
+			    android:id="@+id/bidirectional_redundancy"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:textSize="14sp"
+			    android:text="@string/bidirectional_redundancy"
+			    android:textColor="@color/label_caption" />
+									
+			<View android:layout_width="fill_parent" android:layout_height="10dp" />
+				
+			<LinearLayout
+			    android:id="@+id/scan_angle_lnl"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal"
+			    android:gravity="center_vertical" >
+			
+				<TextView
+				    android:layout_width="0dp"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="1"
+				    android:textSize="14sp"
+				    android:text="@string/scan_angle"
+				    android:textColor="@color/label_caption" />
+				
+				<Spinner android:id="@+id/scan_angle"
+				    android:layout_width="0dp"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="2" />
+			    		    	    
+			</LinearLayout>
+			 -->	    
+				
+			<!-- 
+			<LinearLayout
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal"
+			    android:gravity="center_vertical" >
+			
+				<TextView
+				    android:layout_width="0dp"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="1"
+				    android:textSize="14sp"
+				    android:text="@string/laser_on_time"
+				    android:textColor="@color/label_caption" />
+				
+				<Spinner android:id="@+id/laser_on_time"
+				    android:layout_width="0dp"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="2" />
+			    		    	    
+			</LinearLayout>	
+			 -->    
+				
+			<!-- 	
+			<LinearLayout
+			    android:id="@+id/aim_duration_lnl"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal"
+			    android:gravity="center_vertical" >
+			
+				<TextView
+				    android:layout_width="0dp"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="1"
+				    android:textSize="14sp"
+				    android:text="@string/aim_duration"
+				    android:textColor="@color/label_caption" />
+				
+				<Spinner android:id="@+id/aim_duration"
+				    android:layout_width="0dp"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="2" />
+			    		    	    
+			</LinearLayout>	    
+			 -->
+		
+		<!-- 
+			<TextView
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:textSize="14sp"
+			    android:text="@string/time_out_between_same_symbol"
+			    android:textColor="@color/label_caption" />
+			
+			<Spinner android:id="@+id/time_out_between_same_symbol"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content" />
+												
+			<View android:layout_width="fill_parent" android:layout_height="10dp" />
+			
+			<CheckBox android:id="@+id/beep_after_good_decode"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:textSize="14sp"
+			    android:text="@string/beep_after_good_decode"
+			    android:textColor="@color/label_caption" />
+				
+			<LinearLayout
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal"
+			    android:gravity="center_vertical" >
+			
+				<TextView
+				    android:layout_width="0dp"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="1"
+				    android:textSize="14sp"
+				    android:text="@string/beeper_volume"
+				    android:textColor="@color/label_caption" />
+				
+				<Spinner android:id="@+id/beeper_volume"
+				    android:layout_width="0dp"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="2" />
+			    		    	    
+			</LinearLayout>
+			 -->
+			
+			<LinearLayout
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal"
+			    android:gravity="center_vertical" >
+			
+				<TextView
+				    android:layout_width="0dp"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="1"
+				    android:textSize="14sp"
+				    android:text="@string/inverse_1d"
+				    android:textColor="@color/label_caption" />
+				
+				<Spinner android:id="@+id/inverse_1d"
+				    android:layout_width="0dp"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="2" />
+			    		    	    
+			</LinearLayout>
+			
+			<View android:layout_width="fill_parent" android:layout_height="10dp" />
+			
+			
+			<LinearLayout
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal"
+			    android:gravity="center_vertical" >
+			
+				<TextView
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="1"
+				    android:textSize="14sp"
+				    android:text="@string/char_set_name"
+				    android:textColor="@color/label_caption" />
+				
+			</LinearLayout>
+			
+			<LinearLayout
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal"
+			    android:gravity="center_vertical" >
+				
+				<Spinner android:id="@+id/char_set"
+				    android:layout_width="0dp"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="2" />
+			    		    	    
+			</LinearLayout>
+			
+									
+	    </LinearLayout>
+        
+    </ScrollView>
+	
+	<View android:layout_width="fill_parent" android:layout_height="10dp"/>
+    	
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+    				
+		<Button android:id="@+id/set_option"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center"
+		    android:textSize="16sp"
+		    android:text="@string/set_config"/>
+        
+    </LinearLayout>
+	
+</LinearLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <!-- Barcode List -->
+    <ListView
+        android:id="@+id/barcodes"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:transcriptMode="alwaysScroll"
+        android:background="@drawable/border" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="10dp" />
+
+    <!-- Barcode Option -->
+    <!--  
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/border"
+        android:padding="5dp" >
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+            android:orientation="vertical" >
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                tools:ignore="UselessParent" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="@string/rescan_time"
+                    android:textColor="@color/caption_color"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="40dp" />
+
+                <Spinner
+                    android:id="@+id/rescan_time"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1.5" />
+                
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+    </ScrollView>
+     -->
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="10dp" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="DisableBaselineAlignment" >
+
+        <!-- Barcode Count -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/count"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/barcode_count"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center"
+                android:textColor="@color/count"
+                android:textSize="48sp"
+                android:textStyle="bold"
+                tools:ignore="NestedWeights" />
+            
+        </LinearLayout>
+        
+        <!-- Button -->
+	    
+	    <LinearLayout
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="2.5"
+	        android:orientation="vertical"
+	        tools:ignore="NestedWeights" >
+	
+	              <Button android:id="@+id/action"
+	                  android:layout_width="match_parent"
+	                  android:layout_height="0dp"
+	                  android:layout_weight="1"
+	                  android:enabled="false"
+	                  android:text="@string/action_scan_start"
+	                  android:textSize="18sp" />
+	
+	              <Button android:id="@+id/clear"
+	                  android:layout_width="match_parent"
+	                  android:layout_height="0dp"
+	                  android:layout_weight="1"
+	                  android:enabled="false"
+	               android:text="@string/action_clear"
+	                  android:textSize="18sp" />
+	              		        		        
+	    </LinearLayout>
+        
+	</LinearLayout>
+
+</LinearLayout>

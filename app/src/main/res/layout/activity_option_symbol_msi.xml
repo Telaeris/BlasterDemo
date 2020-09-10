@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical" >
+    
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingRight="5dp" >
+			
+			<TextView
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:textSize="14sp"
+			    android:text="@string/msi_check_digits"
+			    android:textColor="@color/label_caption" />
+		
+			<Spinner
+			    android:id="@+id/msi_check_digits"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content" />
+
+			<CheckBox android:id="@+id/transmit_msi_check_digit"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:textSize="14sp"
+			    android:text="@string/transmit_msi_check_digit"
+			    android:textColor="@color/label_caption" />
+			
+			<TextView
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:textSize="14sp"
+			    android:text="@string/msi_check_digit_algorithm"
+			    android:textColor="@color/label_caption" />
+		
+			<Spinner
+			    android:id="@+id/msi_check_digit_algorithm"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content" />
+			
+			<View android:layout_width="fill_parent" android:layout_height="10dp" />
+			
+			<com.hanmiit.app.rfid.blasterdemo.widgets.SymbolLength android:id="@+id/length"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        
+    </ScrollView>
+	
+	<View android:layout_width="fill_parent" android:layout_height="10dp"/>
+    	
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+    				
+		<Button android:id="@+id/set_option"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center"
+		    android:textSize="16sp"
+		    android:text="@string/set_option"/>
+        
+    </LinearLayout>
+
+</LinearLayout>
